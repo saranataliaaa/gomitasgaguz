@@ -1,0 +1,299 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-color: #fff8f0;
+}
+
+/* NAVBAR FIJA */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #f9c11e;
+}
+
+/* HERO */
+.hero {
+  background-image: url("imagenes/fondo-gomitas.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding-top: 100px;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.hero * {
+  position: relative;
+  z-index: 2;
+}
+
+.logo-hero {
+  width: 260px;
+  margin-bottom: 20px;
+}
+
+.slogan {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.descripcion {
+  font-size: 1rem;
+  max-width: 600px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+/* HERO  pagina NOSOTROS */
+.pagina-nosotros .hero {
+  background-image: none;
+  background-color: #1A0A42;
+}
+
+/* SECCION INFERIOR */
+.seccion-inferior {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ff944d;
+  padding: 60px 5% 60px 5%;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.bloque {
+  flex: 1 1 30%;
+  color: #333;
+}
+
+.bloque h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.bloque p {
+  font-size: 1rem;
+  line-height: 1.6;
+	
+}
+/* HERO personalizado para página de productos */
+.pagina-productos .hero {
+  background-image: none;
+  background-color: #FF8C42; 
+}
+
+
+/* GALERIA DE PRODUCTOS */
+.galeria-productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 60px 5%;
+  background-color: #fef6f1;
+}
+
+.card-producto {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 260px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card-producto:hover {
+  transform: scale(1.05);
+}
+
+.card-producto img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-producto h4 {
+  font-size: 1.2rem;
+  margin: 1rem 0 0.5rem 0;
+  color: #1A0A42;
+}
+
+.card-producto p {
+  font-size: 0.95rem;
+  padding: 0 1rem 1.5rem 1rem;
+  color: #FF8C42;
+}
+.pagina-contacto {
+  background-color: #f9f9f9;
+  padding: 100px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contenido-contacto {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.contenido-contacto h1 {
+  font-size: 2rem;
+  color: #FF8C42;
+  margin-bottom: 1rem;
+}
+
+.contenido-contacto p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.8rem;
+}
+
+/* CONTACTO */
+
+.pagina-contacto {
+  background-color: #f6f6f6;
+  padding-top: 100px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contacto-chevere {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  background-color: white;
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.contacto-chevere:hover {
+  transform: translateY(-5px);
+}
+
+.contacto-chevere h1 {
+  color: #e91e63;
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.contacto-chevere p {
+  font-size: 1.05rem;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.contacto-info {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.contacto-info a {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contacto-info a:hover {
+  color: #e91e63;
+  text-decoration: underline;
+}
+
+.contacto-info a::before {
+   font-weight: bold;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 0.95rem;
+  margin-top: 60px;
+  border-top: 4px solid #e91e63;
+}
+
+.footer-redes {
+  margin-top: 15px;
+}
+
+.footer-redes a {
+  color: #ccc;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.footer-redes a:hover {
+  color: #ffffff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .seccion-inferior {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bloque {
+    flex: 1 1 100%;
+  }
+
+  .hero .descripcion {
+    padding: 0 1rem;
+  }
+  
